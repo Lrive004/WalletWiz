@@ -4,6 +4,8 @@
   "description": "Money budgeting application",
   "main": "server.js",
   "scripts": {
+    "start": "node server/server.js",
+    "watch": "nodemon",
     "test": "npm run test"
   },
   "author": "",
@@ -15,5 +17,9 @@
     "graphql": "^16.8.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.5"
+    
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
