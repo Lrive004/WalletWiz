@@ -10,10 +10,24 @@ const typeDefs = `
         token: ID!
         user: User
     }
+    
+    type Transaction {
+        id: ID!
+        amount: Int!
+        date: String!
+        user: User!
+    }
 
     type Query {
         users: [User]!
         user(userId: ID!): User
+        transactions: [Transaction!]
+        transaction(id: ID!): Transaction
+    }
+
+    type Mutation {
+       register(username: String!, email: String!, password: String!): User!
+       addTransaction(userId: ID!, amount: Int!): Transaction! 
     }
 `
 

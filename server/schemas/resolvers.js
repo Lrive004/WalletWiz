@@ -11,6 +11,14 @@ const resolvers = {
             return User.findOne({ _id: userId });
         },
     },
+    // Mutation: {
+    //     register: async (_, { username, email, password }) => {
+    //         return User.findOne({ email });
+
+ 
+    //     }
+
+    // }
 };
 
 module.exports = resolvers;
