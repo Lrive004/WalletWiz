@@ -20,8 +20,8 @@ const userSchema = new Schema({
   },
   transaction: {
     type: Schema.Types.ObjectId,
-    ref: 'transaction',
-  }
+    ref: "Transaction",
+  },
 });
 
 userSchema.pre("save", async function (next) {
