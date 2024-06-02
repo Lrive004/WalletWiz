@@ -1,6 +1,6 @@
-import { useQuery } from '@apollo/client';
+import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Error = () => {
   const mainStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -29,14 +29,26 @@ const Home = () => {
     marginTop: '20px'
   };
 
-  return(
+  const linkStyle = {
+    display: 'inline-block',
+    marginTop: '20px',
+    padding: '10px 20px',
+    backgroundColor: '#4CAF50',
+    color: '#fff',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    fontSize: '1rem'
+  };
+
+  return (
     <main style={mainStyle}>
       <div style={divStyle}>
-        <h1 style={h1Style}>The app you need to take a hold of your budget.</h1>
-        <p style={pStyle}>Wallet Wiz provides you with the magic of transforming your finances by showing you where it keeps disappearing to, keep an eye on your money and watch it grow!</p>
+        <h1 style={h1Style}>Page Not Found</h1>
+        <p style={pStyle}>Oops, nothing to see here, please visit one of our other pages.</p>
+        <Link to="/" style={linkStyle}>Go Back Home</Link>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Home;
+export default Error;

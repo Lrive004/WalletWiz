@@ -3,6 +3,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import App from './App.jsx'
 import Home from './pages/Home'
+import Error from './pages/Error.jsx'
+import Login from './pages/Login.jsx'
+import Signup from './pages/Signup.jsx'
 // import Profile from './pages/Profile'
 
 const router = createBrowserRouter([
@@ -15,14 +18,14 @@ const router = createBrowserRouter([
         index: true,
         element: <Home/>,
       },
-      // {
-      //   path: '/login',
-      //   element: <Login />
-      // },
-      // {
-      //   path: '/signup',
-      //   element: <Signup />
-      // },
+      {
+        path: '/login',
+        element: <Login />
+      },
+      {
+        path: '/signup',
+        element: <Signup />
+      },
       // {
       //   path: '/profiles/:profileId',
       //   element: <Profile />
