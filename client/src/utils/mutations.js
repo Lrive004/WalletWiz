@@ -1,35 +1,31 @@
 import { gql } from "@apollo/client";
 
-export const ADD_PROFILE = gql`
-  mutation addProfile($name: String!, $email: String!, $password: String!) {
-    addProfile(name: $name, email: $email, password: $password) {
-      token
-      profile {
-        _id
-        username
-      }
-    }
-  }
-`;
-
 export const ADD_TRANSACTION = gql`
-  mutation addTransaction($profileId: ID!, $transaction: String!) {
-    addTransaction(profileId: $profileId, transaction: $transaction) {
+  mutation AddTransaction($description: String!, $amount: Float!) {
+    addTransaction(description: $description, amount: $amount) {
       _id
-      username
-      transactions
+      description
+      amount
     }
   }
 `;
 
-export const LOGIN_USER = gql`
-  mutation login($email: String!, $password: String!) {
-    login(email: $email, password: $password) {
-      token
-      profile {
-        _id
-        username
-      }
+export const ADD_BUDGET = gql`
+  mutation AddBudget($name: String!, $limit: Float!) {
+    addBudget(name: $name, limit: $limit) {
+      _id
+      name
+      limit
+    }
+  }
+`;
+
+export const ADD_GOAL = gql`
+  mutation AddGoal($name: String!, $target: Float!) {
+    addGoal(name: $name, target: $target) {
+      _id
+      name
+      target
     }
   }
 `;
