@@ -12,10 +12,19 @@ const Signup = () => {
     event.preventDefault();
     try {
       // Replace with your actual signup logic
-      const response = await fetch('/api/signup', {
+      const response = await fetch('http://localhost:3000/graphql', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, email, password })
+        body: JSON.stringify({ 
+          query:`
+          mutation register($username: String!, $email: String!, $password: String!) {
+            register(username: $username, email: $email, password: $password) {
+              token
+            }
+          }
+        `,
+        variables: { username, email, password }
+        })
       });
       const data = await response.json();
       Auth.signup(data.token);
