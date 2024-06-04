@@ -52,5 +52,5 @@ Personalized budgeting tips
 
 ### links
 deployed:
-git hub repo:
+git hub repo: https://github.com/Lrive004/WalletWiz
 
