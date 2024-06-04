@@ -1,5 +1,8 @@
 # Wallet Wiz
 
+<img width="1891" alt="image" src="https://github.com/Lrive004/WalletWiz/assets/112648247/84adecb9-1d84-4762-8a61-079920d4fc53">
+
+
 ### About the Project
 Wallet Wiz is a comprehensive budget planner designed to help users take control of their finances. By offering intuitive tools for tracking expenses, setting budgets, and achieving savings goals, Wallet Wiz aims to simplify financial management for individuals at all stages of their financial journey.
 
