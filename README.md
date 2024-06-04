@@ -51,6 +51,6 @@ Subscription and bill management
 Personalized budgeting tips
 
 ### links
-deployed:
+deployed: https://walletwiz-637u.onrender.com/
 git hub repo: https://github.com/Lrive004/WalletWiz
 
